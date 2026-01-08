@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Working Tabs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .tab-links {
+            cursor: pointer;
+            padding: 5px;
+            display: inline-block;
+        }
+
+        .tab-links.active-link {
+            font-weight: bold;
+            color: red;
+        }
+
+        .tab-contents {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .tab-contents.active-tab {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Portfolio Tabs</h1>
+
+    <!-- Tab Buttons -->
+    <p class="tab-links active-link" onclick="opentab(this, 'Skills')">Skills</p>
+    <p class="tab-links" onclick="opentab(this, 'Education')">Education</p>
+    <p class="tab-links" onclick="opentab(this, 'Ecation')">Ecation</p>
+
+    <!-- Tab Content -->
+    <div class="tab-contents active-tab" id="Skills">
+        <ul>
+            <li>UI/UX Design</li>
+            <li>Web Development</li>
+            <li>JavaScript Programming</li>
+        </ul>
+    </div>
+
+    <div class="tab-contents" id="Education">
+        <ul>
+            <li>High School with 85% at R.G. Matric Hr Sec School</li>
+            <li>BE-ECE at Sri Shakthi Institute of Engineering & Technology</li>
+        </ul>
+    </div>
+
+    <div class="tab-contents" id="Ecation">
+        <ul>
+            <li>Extra Tab Example Content</li>
+        </ul>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(clickedElement, tabname) {
+            // Remove active styles
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // Add active styles to clicked tab
+            clickedElement.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>

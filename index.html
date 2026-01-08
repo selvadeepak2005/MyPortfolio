@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELVA DEEPAK PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ac6c8d5e62.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac6c8d5e62.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Mobile Menu Styles */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1002;
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .mobile-menu-toggle {
+                display: block;
+                position: fixed;
+                top: 20px;
+                right: 20px;
+            }
+            
+            nav ul {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.95);
+                flex-direction: column;
+                padding: 80px 20px 20px;
+                z-index: 1000;
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 15px 0;
+                text-align: center;
+            }
+            
+            nav ul li a {
+                font-size: 18px;
+                padding: 10px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()"><i class="fa-solid fa-bars"></i></button>
+                <img src="/logo...png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sevices">Project</a></li>
+                    <li><a href="#portfolio">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header">
+            <p>
+                ECE STUDEND| ASPIRING FULL STACK DEVELOPER
+            </p>
+            <h1>Hi,I'm <span>Selva Deepak</span><br> From Tiruppur</h1>
+        </div>
+    </div>
+    <div id="about">
+        <div class="conta">
+            <div class="row">
+                <div class="col1">
+                    <img src="/myimggg.png" alt="">
+                </div>
+                <div class="col2">
+                    <h1 class="s.tittle">About Me!!</h1>
+                    <p>Enthusiastic engineering graduate with a strong interest in software development and problem-solving. Proficient in Java, basic data structures, and backend development using JavaScript. Hands-on experience in logical coding and academic projects, with growing exposure to IoT-based real-world applications. Eager to learn, adaptable, and motivated to start a career as a fresher in a technology-driven organization where I can build practical skills and add value to the team.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(this, 'Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(this, 'Education')">Education</p>
+                        <p class="tab-links" onclick="opentab(this, 'Ecation')">Soft_skills</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><u>Languages</u>: Java, JavaScript, HTML/CSS</li>
+                            <li><u>Frameworks</u>: Spring Boot, MERN Stack</li>
+                            <li><u>Databases</u>: MySQL, MongoDB</li>
+                            <li><u>Web Development</u>: Frontend & Backend Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li>High School with 85% at R.G. Matric Hr Sec School</li>
+                            <li>BE-ECE at Sri Shakthi Institute of Engineering & Technology - CGPA: 8.2</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="Ecation">
+                        <ul>
+                            <li>Leadership</li>
+                            <li>Critical Thinking</li>
+                            <li>Project Management</li>
+                            <li>Time Management</li>
+                            <li>Teamwork</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="sevices">
+    <div class="container">
+        <hi class="s-title">MY projects</hi>
+        <div class="s-list">
+            <div>
+                <h2>Revenue Insight System</h2>
+                <p>Developed a comprehensive system for analyzing and visualizing revenue data to provide actionable business insights.</p>
+                
+            </div>
+            <div>
+                <h2>Grocery E-Commerce</h2>
+                <p>Built an online grocery shopping platform with user-friendly interface and secure payment integration.</p>
+               
+            </div>
+            <div>
+                <h2>Bus Tracking System</h2>
+                <p>Created a real-time bus tracking application using GPS technology for improved public transportation management.</p>
+               
+            </div>
+            <div>
+                <h2>Power Theft Detection using IoT (ECE)</h2>
+                <p>Implemented an IoT-based system to detect and prevent power theft using sensors and real-time monitoring.</p>
+               
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="s-title">Certifications</h1>
+        <div class="w-list">
+            <div class="work">
+                <img src="https://picsum.photos/seed/cert1/400/300.jpg" alt="Litz Tech Certification">
+                <div class="layer">
+                    <br>
+                    <h3>Litz Tech</h3>
+                    <p>Assisted in designing and developing responsive user interfaces using HTML, CSS, and JavaScript. Worked with modern
+                    frameworks/libraries (e.g., React) to create interactive web pages. Focused on improving user experience, cross-browser
+                    compatibility, and responsive design. Gained hands-on experience in debugging, version control (Git), and collaborating
+                    with the development team.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://picsum.photos/seed/cert2/400/300.jpg" alt="MERN Stack Certification">
+                <div class="layer">
+                    <br>
+                    <h3>Full Stack MERN App/Web Development Traineeship</h3>
+                    <p>Completed comprehensive training on MERN stack development through Miyamam, gaining hands-on experience in building full-stack web applications using MongoDB, Express.js, React, and Node.js.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://picsum.photos/seed/cert3/400/300.jpg" alt="Udemy Certification">
+                <div class="layer">
+                    <br>
+                    <h3>Full Stack Development Course - Udemy</h3>
+                    <p>Completed an extensive full stack development course covering modern web technologies, best practices, and real-world project implementation.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>selvadeepak554433@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>6382168717</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/__.d.e.e.p.a.k___?igsh=MTV5aXM0aDZmdW0ydw=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/selvadeepak2005"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/916382168717"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <a class="btn" href="#">Download CV</a>
+            <div class="contact-right">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<br>
+<hr><br>
+<p style="text-align: center;">copy rights</p>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(clickedElement, tabname) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+         clickedElement.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+        const navUl = document.querySelector('nav ul');
+        const menuToggle = document.querySelector('.mobile-menu-toggle i');
+        
+        navUl.classList.toggle('active');
+        
+        // Toggle between bars and times icon
+        if (navUl.classList.contains('active')) {
+            menuToggle.classList.remove('fa-bars');
+            menuToggle.classList.add('fa-times');
+        } else {
+            menuToggle.classList.remove('fa-times');
+            menuToggle.classList.add('fa-bars');
+        }
+    }
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', () => {
+            const navUl = document.querySelector('nav ul');
+            const menuToggle = document.querySelector('.mobile-menu-toggle i');
+            
+            navUl.classList.remove('active');
+            menuToggle.classList.remove('fa-times');
+            menuToggle.classList.add('fa-bars');
+        });
+    });
+
+</script>
+
+</body>
+</html>
